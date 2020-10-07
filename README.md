@@ -28,6 +28,15 @@ use BiegalskiLLC\NHTSAVehicleAPI\VehicleApi;
 $vehicles = new VehicleApi();
 ```
 
+#### Get Years List
+This method will allow you to pull a generated list of years. It accepts a parameter for the earliest year you want to start at and runs up to two years past the current year (to match some make/models are release schedules).
+
+```
+$vehicles->listYears();
+$vehicles->listYears(1990);
+$vehicles->listYears(1960);
+```
+
 #### Get All Makes
 This method will allow you to pull a live listing of all vehicle makes from the NHSTA Vehicles API.
 
@@ -40,11 +49,20 @@ $vehicles->listAllMakes();
 Considering the make list is extremely extensive from the NHSTA Vehicles API we have curated our own pre-loaded list of commonly used makes in the United States.
 
 The data will include the *Make Name* and *Make ID*.
+
+It defaults to a mix of car/truck makes and motorcycle/scooter makes. It accepts an optional parameter to only pull car/truck or motorcycle/scooter makes as well.
+
 ```
 $vehicles->listPreloadedMakes();
+$vehicles->listPreloadedMakes('car/truck');
+$vehicles->listPreloadedMakes('motorcycle/scooter');
 ```
 
-You can review this list at: `biegalski-llc/nhtsa-vehicle-api/config/preloadedList.php`
+You can review the default list at: `biegalski-llc/nhtsa-vehicle-api/config/VehicleMakes/preloadedMakeList.php`
+
+You can review the car/truck make list at: `biegalski-llc/nhtsa-vehicle-api/config/VehicleMakes/preloadedCarMakeList.php`
+
+You can review the motorcycle/scooter make list at: `biegalski-llc/nhtsa-vehicle-api/config/VehicleMakes/preloadedMotoMakeList.php`
 
 #### Get Accepted List Of Makes
 Considering the make list is extremely extensive from the NHSTA Vehicles API we have another method which accepts an array parameter of all of the makes you would like to pull. The accepted list should be an array of Make ID's from the NHSTA Vehicles API.
@@ -96,7 +114,8 @@ If you discover any security related issues, please email packages@biegalski-llc
 
 ## Credits
 
-- [Michael Biegalski][link-author]
+- [Michael Biegalski][link-author] - Biegalski LLC
+- [Franco Petitfour](https://github.com/0456franco) - Added curated motorcycle/scooter list
 
 ## License
 

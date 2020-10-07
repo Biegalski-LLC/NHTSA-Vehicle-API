@@ -47,15 +47,22 @@ class Makes extends Service
     /**
      * @desc Pre-loaded makes list of common makes
      *
+     * @param string|null $vehicleTypeName
      * @return array
      */
-    public function listPreloadedMakes(string $vehicleTypeName): array
-    {   
-        switch($vehicleTypeName){
+    public function listPreloadedMakes(string $vehicleTypeName = null): array
+    {
+        if( $vehicleTypeName === null ){
+            return include( __DIR__ . '/../../../config/VehicleMakes/preloadedMakeList.php');
+        }
+
+        switch ($vehicleTypeName){
             case 'car/truck':
                 return include( __DIR__ . '/../../../config/VehicleMakes/preloadedCarMakeList.php');
             case 'motorcycle/scooter':
                 return include( __DIR__ . '/../../../config/VehicleMakes/preloadedMotoMakeList.php');
+            default:
+                return include( __DIR__ . '/../../../config/VehicleMakes/preloadedMakeList.php');
         }
     }
 

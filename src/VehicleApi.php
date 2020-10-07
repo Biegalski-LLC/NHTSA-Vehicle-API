@@ -74,9 +74,10 @@ class VehicleApi
     }
 
     /**
+     * @param string|null $vehicleTypeName
      * @return array
      */
-    public function listPreloadedMakes(string $vehicleTypeName): array
+    public function listPreloadedMakes(string $vehicleTypeName = null): array
     {
         return $this->makes->listPreloadedMakes($vehicleTypeName);
     }
