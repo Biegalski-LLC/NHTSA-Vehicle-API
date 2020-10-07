@@ -49,9 +49,14 @@ class Makes extends Service
      *
      * @return array
      */
-    public function listPreloadedMakes(): array
-    {
-        return include( __DIR__ . '/../../../config/preloadedList.php');
+    public function listPreloadedMakes(string $vehicleTypeName): array
+    {   
+        switch($vehicleTypeName){
+            case 'car/truck':
+                return include( __DIR__ . '/../../../config/VehicleMakes/preloadedCarMakeList.php');
+            case 'motorcycle/scooter':
+                return include( __DIR__ . '/../../../config/VehicleMakes/preloadedMotoMakeList.php');
+        }
     }
 
     /**
