@@ -76,9 +76,9 @@ class VehicleApi
     /**
      * @return array
      */
-    public function listPreloadedMakes(): array
+    public function listPreloadedMakes(string $vehicleTypeName): array
     {
-        return $this->makes->listPreloadedMakes();
+        return $this->makes->listPreloadedMakes($vehicleTypeName);
     }
 
     /**
