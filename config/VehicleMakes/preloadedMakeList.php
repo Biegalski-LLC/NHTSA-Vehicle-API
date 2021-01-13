@@ -214,6 +214,10 @@ return [
         'make_name' => 'Plymouth'
     ],
     [
+        'make_id' => 1132,
+        'make_name' => 'Polaris'
+    ],
+    [
         'make_id' => 10224,
         'make_name' => 'Polestar'
     ],
