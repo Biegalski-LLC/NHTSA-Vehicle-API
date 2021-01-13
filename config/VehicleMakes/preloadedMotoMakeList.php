@@ -34,6 +34,10 @@ return [
         'make_name' => 'KTM'
     ],
     [
+        'make_id' => 1132,
+        'make_name' => 'Polaris'
+    ],
+    [
         'make_id' => 3128,
         'make_name' => 'Royal Enfield'
     ],
