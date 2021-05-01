@@ -210,6 +210,10 @@ return [
         'make_name' => 'Panoz'
     ],
     [
+        'make_id' => 2678,
+        'make_name' => 'Piaggio and Vespa'
+    ],
+    [
         'make_id' => 2409,
         'make_name' => 'Plymouth'
     ],
