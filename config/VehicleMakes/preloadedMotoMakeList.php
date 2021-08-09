@@ -34,6 +34,10 @@ return [
         'make_name' => 'KTM'
     ],
     [
+        'make_id' => 4038,
+        'make_name' => 'Moto Electric Vehicles'
+    ],
+    [
         'make_id' => 2678,
         'make_name' => 'Piaggio and Vespa'
     ],

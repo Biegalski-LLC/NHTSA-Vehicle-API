@@ -174,6 +174,10 @@ return [
         'make_name' => 'Mitsubishi'
     ],
     [
+        'make_id' => 4038,
+        'make_name' => 'Moto Electric Vehicles'
+    ],
+    [
         'make_id' => 478,
         'make_name' => 'Nissan'
     ],
