@@ -112,4 +112,31 @@ class VehicleApi
     {
         return $this->models->listModelsByMakeYear($makeId, $year);
     }
+
+    /**
+     * @param int $makeId
+     * @return string
+     */
+    public function getMakeNameFromMakeId(int $makeId): mixed
+    {
+
+        foreach ($this->listPreloadedMakes() as $make) {
+            if ($make['make_id'] == $makeId) return $make['make_name'];
+        }
+        return null;
+    }
+
+
+    /**
+     * @param int $makeId
+     * @param int $modelId
+     * @return string
+     */
+    public function getModelNameFromMakeModelId(int $makeId, int $modelId): mixed
+    {
+        foreach ($this->listModelsByMake($makeId) as $model) {
+            if ($model['Model_ID'] == $modelId) return $model['Model_Name'];
+        }
+        return null;
+    }
 }
