@@ -166,6 +166,10 @@ return [
         'make_name' => 'Lotus'
     ],
     [
+        'make_id' => 10919,
+        'make_name' => 'Lucid Motors'
+    ],
+    [
         'make_id' => 443,
         'make_name' => 'Maserati'
     ],
@@ -305,4 +309,8 @@ return [
         'make_id' => 564,
         'make_name' => 'Yamaha'
     ],
+    [
+        'make_id' => 3972,
+        'make_name' => 'Zhejiang Riya Motorcycle Co'
+    ]
 ];
