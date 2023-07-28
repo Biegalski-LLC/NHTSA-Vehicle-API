@@ -309,4 +309,8 @@ return [
         'make_id' => 564,
         'make_name' => 'Yamaha'
     ],
+    [
+        'make_id' => 3972,
+        'make_name' => 'Zhejiang Riya Motorcycle Co'
+    ]
 ];
