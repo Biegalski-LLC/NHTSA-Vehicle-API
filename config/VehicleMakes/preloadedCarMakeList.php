@@ -142,6 +142,10 @@ return [
         'make_name' => 'Lotus'
     ],
     [
+        'make_id' => 10919,
+        'make_name' => 'Lucid Motors'
+    ],
+    [
         'make_id' => 443,
         'make_name' => 'Maserati'
     ],
