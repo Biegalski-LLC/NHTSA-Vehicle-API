@@ -246,6 +246,10 @@ return [
         'make_name' => 'Ram'
     ],
     [
+        'make_id' => 10887,
+        'make_name' => 'Rivian'
+    ],
+    [
         'make_id' => 445,
         'make_name' => 'Rolls-Royce'
     ],
