@@ -42,6 +42,10 @@ return [
         'make_name' => 'Cadillac'
     ],
     [
+        'make_id' => 591,
+        'make_name' => 'Can-Am'
+    ],
+    [
         'make_id' => 467,
         'make_name' => 'Chevrolet'
     ],
