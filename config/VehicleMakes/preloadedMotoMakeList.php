@@ -42,6 +42,10 @@ return [
         'make_name' => 'Moto Electric Vehicles'
     ],
     [
+        'make_id' => 2536,
+        'make_name' => 'MV Agusta'
+    ],
+    [
         'make_id' => 2678,
         'make_name' => 'Piaggio and Vespa'
     ],
