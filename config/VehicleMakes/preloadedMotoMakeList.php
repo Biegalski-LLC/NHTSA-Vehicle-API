@@ -10,6 +10,10 @@ return [
         'make_name' => 'BMW'
     ],
     [
+        'make_id' => 591,
+        'make_name' => 'Can-Am'
+    ],
+    [
         'make_id' => 568,
         'make_name' => 'Ducati'
     ],
