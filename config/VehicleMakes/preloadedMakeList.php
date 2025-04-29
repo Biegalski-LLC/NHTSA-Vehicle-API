@@ -210,6 +210,10 @@ return [
         'make_name' => 'Moto Electric Vehicles'
     ],
     [
+        'make_id' => 2536,
+        'make_name' => 'MV Agusta'
+    ],
+    [
         'make_id' => 478,
         'make_name' => 'Nissan'
     ],
